@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>MyTrening</title>
+    <style>
+      .styleBAM {
+        color: #900;
+        padding: 2px;
+        text-shadow: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-primary" style="--bs-bg-opacity: 0.3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a
+          class="navbar-brand styleBAM p-0"
+          href="http://127.0.0.1:5500/Main.html"
+          ><img src="/img/reddit.svg" width="47" alt="#"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Works.html">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Skills.html">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <button style="background-color: #444; border:0;" value="light" checked name="theme" class="">LIGHT</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px;">
+              <button style="background-color: #444; border:0;" value="dark" name="theme" class="">DARK</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container mt-3">
+      <h1 class="mb-4">MY TRENING</h1>
+      <div class="imgAndText">
+        <img class="flower _anim-items _anim-no-hiden" src="/img/Flowers.jpg" alt="Цветок.img" />
+        <div class="mainTextBtn">
+          <p class="welcome text-muted _anim-items _anim-no-hiden">
+            Welcome on my portfolio! <br />
+            My name is Barabanshikov Alex and i programmer. Love live and drugs.
+            <br />
+            Is it all what must know about me.
+          </p>
+          <div class="divBtnСlickMe _anim-items _anim-no-hiden">
+            <a
+              href="https://vk.com/idlexalexa1"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btnСlickMe btn btn-primary"
+              >CLICK ME
+            </a>
+          </div>
+          <div class="dateTime _anim-items _anim-no-hiden">
+            <span class="dataTextdata">Date </span>
+            <span id="dateTimeText">
+              time month year
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="lineColor"></div>
+      <div class="secodaryMain _anim-items">
+        <h2 class="titleMoreAboutMe">More about me</h2>
+        <div class="textMoreAboutMe">
+          <div class="text__p _anim-items">
+            <p class="_anim-show">
+              I am young talent learning in DonNTU in Donetsk on programmer and
+              designer. Dos i this it on "good" and "great", also get'd
+              scholarship. Best it turns out do programmer'd and i want more to
+              develop in this path.
+            </p>
+          </div>
+          <div class="text__p _anim-items">
+            <p class="_anim-show">
+              My main goals it see world and live in modern megapolise. Kredo of
+              my life it is develop and relaxation. My character calm, on
+              everythink rest fuck it.
+            </p>
+          </div>
+          <div class="text__p _anim-items">
+            <p class="_anim-show">
+              About yourself more there is nothing talking, if something recall
+              will necessarily writing. This end. Go fuck!
+            </p>
+          </div>
+            <div class="containerBtnComments">
+              <button class="btnComments" onclick="btnComments()">COMMENTS</button>
+            </div>
+            <p class="pComments _anim-comment-item text__p _anim-items">
+              <span class="_anim-show" style="color: rgb(103, 160, 235);">Troshina Julia: </span><i>"My love mous which everyday takes me out from myself and rejoice this. Secretive person and introvert, to him a little people can like'd. He very capricious and demanding. We every friday  do cooking event "Chill out friday ". More we very like eat delishes, and dream about feture. He is  cute pig, at which a lot of energy, that's why he always indulges. In job responsible and serious guy."</i>
+            </p>
+        </div>
+      </div>
+    </main>
+   
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    
+    <script src="/js/TMY.js"></script>
+    <script src="/js/Light.js"></script>
+    <script src="/js/SkrollMain.js"></script>
+  </body>
+</html>
