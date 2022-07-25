@@ -1,0 +1,60 @@
+main {
+  margin: auto;
+  font-size: 28px;
+}
+
+.kartsBlock {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.kartsContent {
+  border-radius: 5%;
+  background-color: #a2c7be;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  height: 35rem;
+  width: 21rem;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-style: solid;
+  border-width: 3px;
+}
+.kartsContent:hover {
+  background-color: #8bc9b9;
+}
+.divImgStol {
+  padding-top: 0.5em;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.divImgStol img {
+  width: 8em;
+
+  border-radius: 10%;
+}
+
+.textKarts {
+  margin: 6px;
+  text-align: center;
+  height: 15rem;
+  font-size: 15px;
+  overflow: auto;
+}
+.textKarts::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  border: #212529 solid;
+}
+.textKarts::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.textKarts::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #212529;
+}

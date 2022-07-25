@@ -1,0 +1,116 @@
+.secondDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iText {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+#ER {
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-style: 26px;
+  color: brown;
+}
+
+form {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+form input {
+  border: 0.18em solid #000;
+  color: white;
+  background-color: #233;
+  border-radius: 10px;
+  padding: 4px 6px 4px 6px;
+}
+
+form input:last-child {
+  color: white;
+  background-color: #040;
+  border-radius: 0px;
+}
+
+form div input {
+  color: #000;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+progress {
+  padding-top: 40px;
+}
+
+/*RADIO*/
+.LableRadio {
+  display: flex;
+  align-items: center;
+}
+.inputRadio {
+  display: none;
+}
+.fake {
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 50%;
+}
+.fake::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 12px;
+  width: 12px;
+  opacity: 0;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.inputRadio:checked + .fake::before {
+  opacity: 1;
+}
+.TextRadio:hover {
+  color: #555;
+}
+
+.male::before {
+  background-color: rgb(38, 93, 181);
+}
+
+.female::before {
+  background-color: rgb(187, 5, 215);
+}
+
+/*Анимация*/
+
+.containerAnim {
+  margin: auto;
+  height: 28em;
+  width: 28em;
+  background-color: yellow;
+  margin-bottom: 1em;
+}
+.boxAnim {
+  height: 2em;
+  width: 2em;
+  background-color: red;
+  position: relative;
+  box-shadow: -2px 4px 6px 0px #000;
+}

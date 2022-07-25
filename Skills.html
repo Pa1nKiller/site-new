@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Skills.css" />
+    <link rel="stylesheet" href="./abc.scss" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>MyTrening</title>
+    <style>
+      .styleBAM {
+        color: #900;
+        padding: 2px;
+        text-shadow: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-primary" style="--bs-bg-opacity: 0.3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a
+          class="navbar-brand styleBAM p-0"
+          href="http://127.0.0.1:5500/Main.html"
+          ><img src="/img/reddit.svg" width="47" alt="#"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Main.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Works.html">WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">SKILLS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container mt-3">
+      <div class="secondDiv">
+        <p class="cText" id="iText">register</p>
+      </div>
+      <form id="main-form" method="post">
+        <label for="name">Имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя:" />
+        <br /><br />
+        <label for="password">Пароль:</label>
+        <input id="pass" type="password" name="pass" placeholder="Пароль:" />
+        <br /><br />
+        <label for="repassword">Проверка пароля:</label>
+        <input
+          id="repass"
+          type="password"
+          name="repass"
+          placeholder="Проверка пароля:"
+        />
+        <br /><br />
+        <span>Пол:</span>
+        <div>
+          <label class="LableRadio">
+            <input
+              checked="active"
+              class="inputRadio"
+              type="radio"
+              name="state"
+              value="Мужской"
+            />
+            <span class="fake male"></span>
+            <span class="TextRadio">Мужской</span>
+          </label>
+
+          <label class="LableRadio">
+            <input
+              class="inputRadio"
+              name="state"
+              type="radio"
+              value="Женский"
+            />
+            <span class="fake female"></span>
+            <span class="TextRadio">Женский</span>
+          </label>
+        </div>
+
+        <div id="ER"></div>
+        <input id="btn" type="submit" name="submit" value="Готово" />
+      </form>
+      <div style="display: flex; justify-content: center; margin-bottom: 1em">
+        <button class="btnAnim" onclick="myBoxAnim()">Анимация</button>
+      </div>
+      <div class="containerAnim">
+        <div class="boxAnim" id="boxAnim"></div>
+      </div>
+    </main>
+    <script src="/js/Skills.js"></script>
+  </body>
+</html>

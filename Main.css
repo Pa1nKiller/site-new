@@ -1,0 +1,200 @@
+h1 {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  font-size: 28px;
+}
+
+.flower {
+  width: 40%;
+  border-radius: 10%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  padding: 0.1em;
+
+  transform: translate(-100%, 0px);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.flower._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.imgAndText {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.welcome {
+  margin-left: 1rem;
+  text-align: center;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.welcome._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1070px) {
+  .imgAndText {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .welcome {
+    margin-top: 15px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+  }
+}
+
+.divBtnСlickMe {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, 110%);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+.divBtnСlickMe._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 2s ease 0s;
+}
+
+.btnСlickMe {
+  font-size: 22px;
+}
+
+.textBtnСlickMe {
+  padding: 10px;
+}
+
+.secodaryMain {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  background-color: #212529;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  color: rgb(211, 211, 211);
+
+  transform: translate(0px, 20%);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.secodaryMain._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.titleMoreAboutMe {
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.textMoreAboutMe {
+  text-align: justify;
+  text-indent: 3em;
+  padding: 1em 1em 1em 1em;
+}
+
+@media screen and (max-width: 991px) {
+  .titleMoreAboutMe {
+    font-size: 20px;
+  }
+  .textMoreAboutMe {
+    font-size: 16px;
+  }
+}
+
+.lineColor {
+  margin: auto;
+  margin-top: 6rem;
+  background-color: rgba(27, 2, 255, 0.9);
+  border-radius: 0.3rem;
+  height: 0.2rem;
+  width: 60%;
+  box-shadow: 0px 0px 0px 0.1rem rgba(27, 2, 255, 0.7),
+    0px 0px 0px 0.2rem rgba(27, 2, 255, 0.5),
+    0px 0px 0px 0.3rem rgba(27, 2, 255, 0.3),
+    0px 0px 0px 0.4rem rgba(27, 2, 255, 0.2),
+    0px 0px 0px 0.5rem rgba(27, 2, 255, 0.1),
+    0px 0px 0px 0.6rem rgba(2, 141, 255, 0.3);
+  filter: blur(3px);
+}
+
+.dateTime {
+  display: flex;
+  justify-content: center;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+.dateTime._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 2s ease 0.4s;
+}
+
+#dateTimeText {
+  margin-left: 1rem;
+  color: red;
+}
+
+.containerBtnComments {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.btnComments {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: rgb(4, 119, 181);
+  color: black;
+  border: 0;
+}
+.btnComments:hover {
+  transition: all 0.4s ease 0s;
+  background-color: rgb(3, 63, 230);
+}
+
+.pComments {
+  display: none;
+}
+
+.pComments._active {
+  display: block;
+}
+
+/*Анимация информации обо мне*/
+
+.text__p {
+  overflow: hidden;
+}
+
+._anim-show {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 2s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
